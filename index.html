@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="red">
+
+<div id="popUpMain" style="display: none">
+    <div id="popup">
+
+        <h2 id="newsHeading"></h2>
+        <input type="email" name="" placeholder="user@email.com" id="emailId">
+        <br>
+        <button class="submitId">Subscribe</button>
+        <button class="submitId">No Thanks</button>
+    </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+    var preloader = document.getElementById("loading");
+    function myFunction() {
+              preloader.style.display='none';
+    }
+
+    $(document).ready(function () {
+           setTimeout(function () {
+                $('#popUpMain').css('display','block  ')
+           },1000);
+    });
+
+    $('.submitId').click(function () {
+        $('#popUpMain').css('display','none');
+    })
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+.red {
+    background-color: rebeccapurple;
+}
+
+
+#popUpMain{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.53);
+    z-index: 1001;
+}
+
+#popup{
+    width: 800px;
+    height: 400px;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("JSNN-welcome-pop-banner-2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 1px 2px 5px 3px white;
+    text-align: center;
+}
+
+#newsHeading{
+    color: white;
+    transform: translateY(50px);
+}
+
+
+#emailId{
+    width: 40%;
+    padding: 5px;
+    margin-top: 150px;
+    margin-bottom: 10px;
+}
+
+.submitId{
+    background-color: #2387ff;
+    border: none;
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+    color: white;
+}
